@@ -1,0 +1,23 @@
+.titulo {
+    color: darksalmon;
+    text-align: center;
+
+}
+
+.img {
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+#button-p{
+    border-color: rgb(19, 17, 17);
+    background-color: #ffffff60;
+    color: "black"
+}
+
+
+.textDecoration{
+    text-decoration: none;
+}

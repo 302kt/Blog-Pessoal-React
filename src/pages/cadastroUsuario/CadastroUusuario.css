@@ -1,0 +1,19 @@
+.imagemCadastro{
+    background-image: url(https://i.imgur.com/JEw6Fx3.png);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.cadastro{
+        background-color: #EDE0D4
+}
+
+.formCadastro{
+    background-color: #c99e7b94;
+    height: 95vh;
+    border-radius: 10%;
+    box-shadow: 0px 10px 40px #00000056;
+}
