@@ -12,12 +12,36 @@
 }
 
 #button-p{
-    border-color: rgb(19, 17, 17);
-    background-color: #ffffff60;
-    color: "black"
+    border-color: rgb(248, 137, 63);
+    background-color: #f88436e3;
+    color: #010105;
+    font-weight: bold;
 }
 
 
 .textDecoration{
     text-decoration: none;
+}
+
+.box-cima{
+    background-color: #9aa6ec !important;
+}
+
+.box-meio{
+    background-color: #f1ece6;
+}
+
+.button-t{
+    border-color: rgb(248, 137, 63) !important;
+    background-color: #f88436e3 !important;
+    color: #010105 !important;
+    font-weight: bold !important; 
+}
+
+
+.button-c{
+    border-color: rgb(248, 137, 63) !important;
+    background-color: #f88436e3 !important;
+    color: #010105 !important;
+    font-weight: bold !important;   
 }

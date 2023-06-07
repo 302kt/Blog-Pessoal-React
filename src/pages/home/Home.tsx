@@ -40,16 +40,16 @@ export default function Home() {
     return (
 
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center"style={{ backgroundColor: "#3F51B5" }}>
+            <Grid container direction="row" justifyContent="center" alignItems="center" className='box-cima'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "white", fontWeight: "bold" }}>Seja bem vindo(a) ao DevCia!</Typography>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "white", fontWeight: "bold"}}>Seja bem vindo(a) ao DevCia!</Typography>
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "white", fontWeight: "bold" }}>expresse aqui os seus pensamentos e opiniões!</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Link to={'/postagens'} className="textDecoration">
                         <Box marginRight={1}>
-                            <ModalPostagem />
+                            {/* <ModalPostagem /> */}
                         </Box>
                         <Button id="button-p" variant="outlined">Ver Postagens</Button>
                         </Link>
@@ -62,17 +62,38 @@ export default function Home() {
                 </Grid>
             </Grid>
 
-            <Grid container direction="row-reverse" justifyContent="center" alignItems="center"style={{ backgroundColor: "#fdc660" }}>
+            <Grid container direction="row-reverse" justifyContent="center" alignItems="center" className="box-meio">
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "black", fontWeight: "bold" }}>Ou...</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "black", fontWeight: "bold" }}>Veja os nossos temas!</Typography>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "black", fontWeight: "bold" }}>Você também pode..</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "black", fontWeight: "bold" }}>Ver os nossos temas!</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Link to={'/temas'} className='textDecoration'>
                         <Box marginRight={1}>
                         </Box>
-                        <Button id="button-p" variant="outlined">Ver Temas</Button>
+                        <Button className='button-t' variant="outlined">Ver Temas</Button>
+                        </Link>
+                    </Box>
+                </Grid>
+                <Grid item xs={6} >
+                <img src={ImgTemas} alt="logo" width="550px" height="300px" />
+                </Grid>
+                <Grid xs={12} style={{ backgroundColor: "white" }}>
+                </Grid>
+            </Grid>
+
+            <Grid container direction="row" justifyContent="center" alignItems="center" className="box-cima">
+                <Grid alignItems="center" item xs={6}>
+                    <Box paddingX={20} >
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "white", fontWeight: "bold" }}>Saiba mais</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "white", fontWeight: "bold" }}>Entre em contato com a desenvolvedora!</Typography>
+                    </Box>
+                    <Box display="flex" justifyContent="center">
+                        <Link to={'/temas'} className='textDecoration'>
+                        <Box marginRight={1}>
+                        </Box>
+                        <Button className='button-c' variant="outlined">Contato</Button>
                         </Link>
                     </Box>
                 </Grid>
